@@ -33,7 +33,9 @@ HTML é uma sigla para *HyperText Markup Language* ou *Linguagem de marcação d
 Bem, de forma resumida, uma API nada mais é do que uma ferramenta que segue um conjunto de protocolos e viabiliza integrações através de uma interface que permite essa integração. Mas o que exatamente significa a palavra? "API" é um acrônimo para *Application Programming Interface* e sua tradução literal é *Interface de Programação de Aplicação*. Além disso, uma API comumente oferece um conjunto de interfaces 
 ### Quais suas finalidades?
 Uma das suas principais finalidades é viabilizar a **comunicação entre serviços** e esse processo acontece através do esquema de requisições e respostas. Ou seja, uma das principais funções da API é permitir que duas extremidades, ou melhor, dois serviços realizem uma **troca ou envio de informações** e esse processo acontece justamente por meio de requisições e respostas ou ***requests*** e ***responses***. E esse tipo de API é conhecida como **Web API**
+
 ![Representação simples de requisições e respostas](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/o-que-e-rest-api/imgs/request-and-response.png)
+
 Além disso, outra finalidade finalidade que uma API pode ter é de desenvolvimento, ou seja, a API fornece interfaces para o programador desenvolvedor aplicações. Um bom exemplo é o ***HTML DOM API***, que fornece ao programador as interfaces necessários para a manipulações de elementos no documento HTML ou o # ***Web Storage API***, que permite que o programador armazene dados com o navegador através do esquema de chave-valor.
 
 ## Arquitetura Web
@@ -51,7 +53,9 @@ O estudioso *Roy Fielding*, preocupado com a escalabilidade da web, reconheceu q
 De forma simplificada, a web como conhecemos é dividida da seguinte maneira: ***clientes*** e ***servidores***. De um lado temos o **usuário ou programador** (cliente) e do outro o **fornecedor de recursos** (servidor).
 Essa comunicação entre cliente e servidor acontece por meio de **requisições e respostas**.
 O cliente faz a requisição, o servidor recebe essa requisição e trabalha em cima dela, podendo atuar como um intermediador de um banco de dados, por exemplo, ou também simplesmente devolvendo informações relevantes.
+
 ![Representação de requisições e respostas com um servidor intermediando o cliente e o DB](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/o-que-e-rest-api/imgs/response-and-request-db.png)
+
 A graça disso tudo tá em simplesmente não saber o que acontece lá do outro lado quando a informação chega, o que importa mesmo é a resposta.
 
 ### Uniform interface
@@ -91,6 +95,7 @@ Exemplo:
 
 ### Sistema em camadas
 As restrições do sistema em camadas permitem que **intermediários de redes** sejam implantados de forma visível através de uma interface e o seu propósito é justamente interceptar a **comunicação cliente-servidor**. Por exemplo: *proxies*, *gateways*, *balanceadores de carga*, *firewalls* e afins.
+
 ![Representação simples de requisições e respostas](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/o-que-e-rest-api/imgs/system-layered.png)
 
 #### Cache
@@ -101,6 +106,7 @@ A restrição sem estado define que o servidor web não é **necessário memoriz
 
 #### Code-on-demand
 Code-on-demand ou código sob demanda é a **transferência temporária de programas executáveis** - *scripts* ou *plug-ins* - para os clientes. Esse processo permite um acoplamento tecnológico entre servidores web e seus clientes. Um exemplo de plug-in que segue esse modelo de transferência de programas executáveis é o *Adobe Flash*.
+
 ![Logo do Adobe Flash](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/o-que-e-rest-api/imgs/adobe-flash-logo.jpg)
 
 ### Tá... E o que é REST API?
@@ -129,32 +135,32 @@ Requisições que definem ***padrões de comunicação*** entre um servidor e um
 - **503 Service Unavailable**: o servidor teve muitas requisições e está fora de ar temporariamente - não necessariamente precisa ser um ataque de negação de serviço (DDoS)
 
 ## Referências
-1.  [Significados | Interface: o que é e significado (sistema ou software)](https://www.significados.com.br/interface/)
-2.  [Alura | API: entenda o que é, para quê serve e qual a sua importância | Alura](https://www.alura.com.br/artigos/api)
-3.  [MDN | JSON - JavaScript ](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON)
-4.  [TreinaWeb | O que é HATEOAS?](https://www.treinaweb.com.br/blog/o-que-e-hateoas/)
-5.  [Lunnary | O que é: HTTP Request Header (Cabeçalho de Requisição HTTP)](https://lunnary.com.br/glossario/o-que-e-http-request-header-cabecalho-de-requisicao-http/)
-6.  [Devmedia | HTTP: Headers](https://www.devmedia.com.br/http-headers/41219)
-7.  [Devmedia | HTTP: Verbos](https://www.devmedia.com.br/http-verbos/41224)
-8.  [MDN | Métodos de requisição HTTP - HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)
-9.  [Bright | Getting Started With HTTP Verbs](https://faun.pub/getting-started-with-http-verbs-a4050ec4d6ef)
-10.  [Hostinger | Erro 403 Forbidden: O Que Significa e Como Corrigir](https://www.hostinger.com.br/tutoriais/o-que-significa-erro-403)
-11.  [MDN | 405 Method Not Allowed - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405)
-12.  [MDN | 500 Internal Server Error - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
-13.  [Hostinger | HTTP Erro 500: Aprenda a Corrigir o Erro Interno do Servidor](https://www.hostinger.com.br/tutoriais/como-corrigir-o-erro-interno-500-servidor-no-wordpress#O_que_e_o_Erro_500)
-14.  [Kinsta | O que é um Endpoint de API?](https://kinsta.com/pt/base-de-conhecimento/endpoint-api/)
-15.  [Stack Overflow | Qual a diferença entre endpoint e API?](https://pt.stackoverflow.com/questions/86399/qual-a-diferen%C3%A7a-entre-endpoint-e-api)
-16.  [TechTudo | O que é API e para que serve? Cinco perguntas e respostas](https://www.techtudo.com.br/listas/2020/06/o-que-e-api-e-para-que-serve-cinco-perguntas-e-respostas.ghtml)
-17.  [MDN | The HTML DOM API - Web APIs](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)
-18.  [MDN | API de Armazenamento na Web - APIs da Web](https://developer.mozilla.org/pt-BR/docs/Web/API/Web_Storage_API)
-19.  [MDN | HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
-20.  [MDN | HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
-21.  [Red Hat | O que é uma API REST?](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)
-22.  [Controle.net | Cliente-Servidor, uma estrutura lógica para a computação centralizada](https://www.controle.net/faq/cliente-servidor-uma-estrutura-para-a-computacao-centralizada)
-23.  [Stack Overflow | REST - What exactly is meant by Uniform Interface?](https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface)
-24.  [GeeksforGeeks | REST API Architectural Constraints](https://www.geeksforgeeks.org/rest-api-architectural-constraints/)
-25.  [Oracle | REST API Guide](https://docs.oracle.com/en/cloud/saas/warehouse-management/22c/owmre/optional-trailing-slashes.html)
-26.  [Stack Overflow | REST - What exactly is meant by Uniform Interface?](https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface)
+1. [Significados | Interface: o que é e significado (sistema ou software)](https://www.significados.com.br/interface/)
+2. [Alura | API: entenda o que é, para quê serve e qual a sua importância | Alura](https://www.alura.com.br/artigos/api)
+3. [MDN | JSON - JavaScript ](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON)
+4. [TreinaWeb | O que é HATEOAS?](https://www.treinaweb.com.br/blog/o-que-e-hateoas/)
+5. [Lunnary | O que é: HTTP Request Header (Cabeçalho de Requisição HTTP)](https://lunnary.com.br/glossario/o-que-e-http-request-header-cabecalho-de-requisicao-http/)
+6. [Devmedia | HTTP: Headers](https://www.devmedia.com.br/http-headers/41219)
+7. [Devmedia | HTTP: Verbos](https://www.devmedia.com.br/http-verbos/41224)
+8. [MDN | Métodos de requisição HTTP - HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)
+9. [Bright | Getting Started With HTTP Verbs](https://faun.pub/getting-started-with-http-verbs-a4050ec4d6ef)
+10. [Hostinger | Erro 403 Forbidden: O Que Significa e Como Corrigir](https://www.hostinger.com.br/tutoriais/o-que-significa-erro-403)
+11. [MDN | 405 Method Not Allowed - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405)
+12. [MDN | 500 Internal Server Error - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
+13. [Hostinger | HTTP Erro 500: Aprenda a Corrigir o Erro Interno do Servidor](https://www.hostinger.com.br/tutoriais/como-corrigir-o-erro-interno-500-servidor-no-wordpress#O_que_e_o_Erro_500)
+14. [Kinsta | O que é um Endpoint de API?](https://kinsta.com/pt/base-de-conhecimento/endpoint-api/)
+15. [Stack Overflow | Qual a diferença entre endpoint e API?](https://pt.stackoverflow.com/questions/86399/qual-a-diferen%C3%A7a-entre-endpoint-e-api)
+16. [TechTudo | O que é API e para que serve? Cinco perguntas e respostas](https://www.techtudo.com.br/listas/2020/06/o-que-e-api-e-para-que-serve-cinco-perguntas-e-respostas.ghtml)
+17. [MDN | The HTML DOM API - Web APIs](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)
+18. [MDN | API de Armazenamento na Web - APIs da Web](https://developer.mozilla.org/pt-BR/docs/Web/API/Web_Storage_API)
+19. [MDN | HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
+20. [MDN | HTML: HyperText Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
+21. [Red Hat | O que é uma API REST?](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)
+22. [Controle.net | Cliente-Servidor, uma estrutura lógica para a computação centralizada](https://www.controle.net/faq/cliente-servidor-uma-estrutura-para-a-computacao-centralizada)
+23. [Stack Overflow | REST - What exactly is meant by Uniform Interface?](https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface)
+24. [GeeksforGeeks | REST API Architectural Constraints](https://www.geeksforgeeks.org/rest-api-architectural-constraints/)
+25. [Oracle | REST API Guide](https://docs.oracle.com/en/cloud/saas/warehouse-management/22c/owmre/optional-trailing-slashes.html)
+26. [Stack Overflow | REST - What exactly is meant by Uniform Interface?](https://stackoverflow.com/questions/25172600/rest-what-exactly-is-meant-by-uniform-interface)
 27. Oluwatosin, H. S. (2014). Client-server model. IOSR Journal of Computer Engineering, 16(1), 67-71.
 28. Mark Massé. REST API Design Rulebook. United States of America: O’Reilly Media, 2012. 114 p.
 29. Leonard Richardson, Mike Amundsen. RESTful Web APIs. United States of America: O’Reilly Media, 2012. 404 p.
