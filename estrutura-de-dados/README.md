@@ -24,6 +24,7 @@ Estrutura de dado em que os elementos são **dispostos sequencialmente ou linear
 Isso quer dizer que estrutura segue com um **tamanho de memória fixo**. Logo, seu acesso aos elementos é mais fácil, como é o *vetor*.
 ###### Vetor
 O vetor é uma estrutura de dado linear que guarda uma **coleção de elementos do mesmo tipo**. Uma das suas principais características é de que seus elementos podem ser localizados facilmente, visto que estes são **indexados a cada adição**. Então, **cada elemento possui um índice** - começando por 0.
+
 ![Representação de um array](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/estrutura-de-dados/imgs/array.png)
 
 ##### Dinâmica
@@ -31,6 +32,7 @@ Diferente da estrutura de dado linear, a dinâmica **não possui um tamanho fixo
 
 ###### Fila
 A fila segue o princípio do ***FIFO*** (First-In-First-Out ou Primeiro a entrar, primeiro a sair), que é um método em que o **primeiro elemento que chegou vai ser processado e quaisquer elementos subsequentes serão processados**.
+
 ![Representação de uma fila](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/estrutura-de-dados/imgs/queue.png)
 
 ##### Pilha
@@ -39,6 +41,7 @@ Diferente da fila, a pilha usa o princípio do **LIFO** (Last In, First Out ou �
 
 ##### Lista lincada
 A lista lincada, diferente da fila e da pilha, segue com uma particularidade muito peculiar: **seus elementos são armazenados em nós** (nodes), sendo estes conectados por *ponteiros* - endereços de memória que apontam para uma variável - e **só podem ser acessados de forma sequencial**. Logo, cada ponteiro aponta para o próximo nó.
+
 ![Representação de uma linked list](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/estrutura-de-dados/imgs/linked-list.png)
 
 ### Não linear
@@ -46,12 +49,13 @@ A lista lincada, diferente da fila e da pilha, segue com uma particularidade mui
 A estrutura não linear diferente da linear, **os elementos não dispostos de forma sequencial e muito menos de forma linear**, o que implica dizer que **não se pode atravessar todos os elementos de uma vez**, como é o caso da árvore e dos grafos.
 #### Árvore
 A árvore segue uma organização baseada em uma **hierarquia que consiste em nós (nodes) interligados por bordas (edges)**. Sendo o **topo da árvore denominada "raiz" (root)** e essa **raiz possui nós filhos** - relação de parent e child nodes.
+
 ![Representação de uma tree](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/estrutura-de-dados/imgs/tree.png)
 
 #### Grafo
 O grafo consiste em um **conjunto finito de vértices (ou nós)** e por um **conjunto de arestas (links) que conectam pares de nós**, representando um relacionamento entre entidades.
-![Representação de um grafo](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/estrutura-de-dados/imgs/graph.png)
 
+![Representação de um grafo](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/estrutura-de-dados/imgs/graph.png)
 
 ## Extra
 ### Stack Overflow
@@ -66,8 +70,10 @@ Continuando o tópico anterior, de forma simplificada, o stack overflow é um pr
 Por exemplo, imagine que você utiliza uma biblioteca ou instanciou um objeto de uma classe e quer usar as funções/métodos dessa ferramenta. Até aí tudo bem, mas imagine que há uma limitação na quantidade de funções que podem ser chamadas. Então, você chama uma função que chama outras três funções para executar tal processo, e isso vai ocorrendo ao longo do seu código. Parece tranquilo, certo? Não, não é. Quando você chama várias funções, cada chamada é armazenada na pilha de execução (stack). A pilha tem um **espaço limitado** e, se você fizer muitas chamadas aninhadas **sem liberar a memória** (ou seja, sem que as funções retornem), você pode acabar causando um **stack overflow**.
 
 O stack overflow acontece quando a pilha de execução excede seu limite de memória, resultando em um ***erro fatal*** no programa. Se você estiver usando Windows, isso pode até causar a famosa ***tela azul da morte*** (BSOD ou Blue Screen of Death).
+
 ![BSOD](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/estrutura-de-dados/imgs/bsod.jpg)
-Portanto, é crucial gerenciar corretamente a memória e as chamadas de função para evitar esse problema e você também não gostaria que o seu programinha desse uma tela azul medonha como essa não é? Então, é importante estudar sobre alocação de memória, ponteiros e afins. Ou não... Hoje em dia, muitas linguagens de programação já cuidam disso. Diferentemente de linguagens mais robustas, como *C*, por exemplo ou o temido *Assembly*. Ainda assim, nós cuidamos do nosso "lixo" que, no contexto da programação, é chamado de ***GC*** ou ***Garbage Collection*** (coleta de lixo). Mas, ainda assim, é muito difícil fazer um stack overflow com linguagens modernas com JavaScript, PHP, Python... Mas não impossível...
+
+Portanto, é crucial gerenciar corretamente a memória e as chamadas de função para evitar esse problema e você também não gostaria que o seu programinha desse uma tela azul medonha como essa não é? Então, é importante estudar sobre alocação de memória, ponteiros e afins. Ou não... Hoje em dia, muitas linguagens de programação já cuidam disso. Diferentemente de linguagens mais robustas, como *C*, por exemplo ou o temido *Assembly*. Ainda assim, nós cuidamos do nosso "lixo" que, no contexto da programação, é chamado de ***GC*** ou ***Garbage Collection*** (coleta de lixo). Mas, ainda assim, é muito difícil fazer um stack overflow com linguagens modernas com JavaScript, PHP, Python e muitas outras. Mas não impossível...
 
 ## Referências
 1. [GeeksforGeeks | Data Structures Tutorial](https://www.geeksforgeeks.org/data-structures/)
@@ -77,5 +83,4 @@ Portanto, é crucial gerenciar corretamente a memória e as chamadas de função
 5. [GeeksforGeeks | Basic Terminologies of Linked List](https://www.geeksforgeeks.org/what-is-linked-list/)
 6. [GeeksforGeeks | Introduction to Tree Data Structure - GeeksforGeeks](https://www.geeksforgeeks.org/what-is-linked-list/)
 7. [W3Schools | Introduction  to Data Structures and Algorithms](https://www.w3schools.com/dsa/dsa_intro.php)
- 8. [Stack Overflow | How does a "stack overflow" occur and how do you prevent it?](https://stackoverflow.com/questions/26158/how-does-a-stack-overflow-occur-and-how-do-you-prevent-it)# Definição
-De forma sintetizada, a ***ED*** (*estrutura de dados*) é usada para **armazenar ou agrupar dados**. Existem diferentes formas de organizar dados dependendo do tipo de dado que tivermos e como podemos ou queremos dispor.
+8. [Stack Overflow | How does a "stack overflow" occur and how do you prevent it?](https://stackoverflow.com/questions/26158/how-does-a-stack-overflow-occur-and-how-do-you-prevent-it)
