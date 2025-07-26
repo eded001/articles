@@ -6,7 +6,7 @@
 
 * **GitHub** é uma plataforma online onde você armazena repositórios Git. Permite colaboração entre devs, revisão de código, issues, automações, pull requests e mais.
 
-![]()
+![Git vs GitHub](https://raw.githubusercontent.com/eded001/articles/refs/heads/main/o-que-git-e-uma-marca-de-gloss/imgs/git-vs-github.jpg)
 
 **Resumo:**
 
@@ -14,8 +14,6 @@
 * GitHub = plataforma online que hospeda repositórios Git
 
 Você pode usar Git sem GitHub. Mas GitHub sem Git não existe.
-
-**Diagrama:**
 
 ```
 [ Seu PC com Git ] ────────> [ GitHub ]
@@ -90,7 +88,7 @@ git remote add origin https://github.com/seu-usuario/repositorio.git
 git push -u origin main
 ```
 
-**Fluxo visual dos comandos:**
+**Fluxo:**
 
 ```
 [ git init ]
